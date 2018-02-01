@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/* Partials
+================================*/
 @import '../partials/layout.scss'; // responsive grid and media queries html 
 @import '../partials/mixins.scss'; //custom mixins
 @import '../partials/variables.scss'; // colors, fonts etc..
@@ -23,9 +27,30 @@ body {
 
 /* Navbar Custom
 ============================== */
-
-
-
+.navbar-custom{
+	padding: 1rem;
+	background-color: rgba($color-7, 0.6);
+	border-bottom: 1px solid $color-6;
+	& a{
+		font-family: $primary-font;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.1rem;	
+		color: $color-6;
+	}
+}
+.nav-item{
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: rgba($color-6, 0.8);
+		border: 1px solid $color-8;
+		margin: -1px; 
+		a{
+			color: $color-7;
+		}
+	}
+}
 
 
 

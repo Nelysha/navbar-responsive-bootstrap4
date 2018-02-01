@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+/* Partials
+================================*/
 /* Colors
  ===========================*/
 /*Fonts
@@ -22,6 +25,24 @@ body {
 
 /* Navbar Custom
 ============================== */
+.navbar-custom {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #ffffff; }
+  .navbar-custom a {
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #ffffff; }
+
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ED3237;
+  margin: -1px; }
+  .nav-item:hover a, .nav-item:focus a, .nav-item:active a {
+    color: #000000; }
+
 /*Section part
 ===============================*/
 #section-home {
