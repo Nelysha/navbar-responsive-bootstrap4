@@ -1,0 +1,57 @@
+@import '../partials/layout.scss'; // responsive grid and media queries html 
+@import '../partials/mixins.scss'; //custom mixins
+@import '../partials/variables.scss'; // colors, fonts etc..
+
+/*Custom CSS
+================================*/
+
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar Custom
+============================== */
+
+
+
+
+
+
+
+
+
+
+/*Section part
+===============================*/
+#section-home{
+	background-color: $color-1;
+	height: 100%; 
+}
+#section-about{
+	background-color: $color-2;
+	height: 100%;
+}
+#section-portfolio{
+	background-color: $color-3;
+	height: 100%;
+}
+#section-blog{
+	background-color: $color-4;
+	height: 100%;
+}
+#section-contact{
+	background-color: $color-5;
+	height: 100%;
+}
