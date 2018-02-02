@@ -29,8 +29,7 @@ body {
 ============================== */
 .navbar-custom{
 	padding: 1rem;
-	background-color: rgba($color-7, 0.6);
-	border-bottom: 1px solid $color-6;
+	background-color: transparent;
 	& a{
 		font-family: $primary-font;
 		text-transform: uppercase;
@@ -38,11 +37,17 @@ body {
 		letter-spacing: 0.1rem;	
 		color: $color-6;
 	}
+	li.nav-item.active{
+	background-color: $color-8 !important;
+   }
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out
 }
 .nav-item{
 	&:hover,
 	&:focus,
-	&:active{
+	{
 		background-color: rgba($color-6, 0.8);
 		border: 1px solid $color-8;
 		margin: -1px; 
@@ -50,9 +55,30 @@ body {
 			color: $color-7;
 		}
 	}
+	
+}
+.active{
+  background-color: $color-8;
+  color: $color-7;
+   -webkit-transition: background 2s ease-in-out;
+    -moz-transition: background 2s ease-in-out;
+    transition: background 2s ease-in-out
 }
 
+.navbar-custom.top-nav-collapse{
+	background-color: red;
+	padding: 0;
+	background-color: rgba($color-7, 0.6);
+	border-bottom: 1px solid $color-6;
+}
+.navbar-toggler{
+	border: 1px solid $color-6;
 
+	& i {
+		color: $color-6;
+		margin: .2rem
+	}
+}
 
 
 

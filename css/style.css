@@ -27,21 +27,44 @@ body {
 ============================== */
 .navbar-custom {
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid #ffffff; }
+  background-color: transparent;
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
   .navbar-custom a {
     font-family: "Titillium Web", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.1rem;
     color: #ffffff; }
+  .navbar-custom li.nav-item.active {
+    background-color: #ED3237 !important; }
 
-.nav-item:hover, .nav-item:focus, .nav-item:active {
+.nav-item:hover, .nav-item:focus {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #ED3237;
   margin: -1px; }
-  .nav-item:hover a, .nav-item:focus a, .nav-item:active a {
+  .nav-item:hover a, .nav-item:focus a {
     color: #000000; }
+
+.active {
+  background-color: #ED3237;
+  color: #000000;
+  -webkit-transition: background 2s ease-in-out;
+  -moz-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out; }
+
+.navbar-custom.top-nav-collapse {
+  background-color: red;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #ffffff; }
+
+.navbar-toggler {
+  border: 1px solid #ffffff; }
+  .navbar-toggler i {
+    color: #ffffff;
+    margin: 0.2rem; }
 
 /*Section part
 ===============================*/
