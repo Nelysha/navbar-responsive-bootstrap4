@@ -1,13 +1,15 @@
+/* GOOGLE FONT IMPORT
+ *********************************/
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-/* Partials
-================================*/
+/* PARTIALS
+***********************************/
 @import '../partials/layout.scss'; // responsive grid and media queries html 
 @import '../partials/mixins.scss'; //custom mixins
 @import '../partials/variables.scss'; // colors, fonts etc..
 
-/*Custom CSS
-================================*/
+/*CUSTOM CSS
+**********************************/
 
 *,
 :before,
@@ -25,8 +27,8 @@ body {
 	padding: 0;
 }
 
-/* Navbar Custom
-============================== */
+/* NAVBAR CUSTOM
+***********************************/
 .navbar-custom{
 	padding: 1rem;
 	background-color: transparent;
@@ -67,7 +69,10 @@ body {
 
 .navbar-custom.top-nav-collapse{
 	background-color: red;
-	padding: 0;
+	padding:{
+		top: 0;
+		bottom: 0;
+	}
 	background-color: rgba($color-7, 0.6);
 	border-bottom: 1px solid $color-6;
 }
@@ -80,12 +85,8 @@ body {
 	}
 }
 
-
-
-
-
-/*Section part
-===============================*/
+/* SECTION PART
+************************************/
 #section-home{
 	background-color: $color-1;
 	height: 100%; 
